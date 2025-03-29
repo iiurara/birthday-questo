@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Galactic Birthday Quest</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+        body {
+            background: radial-gradient(circle at center, #0f0c29, #302b63, #24243e);
+            color: #c9f0ff;
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-shadow: 0 0 10px #00f5ff, 0 0 20px #00bbff;
+            color: #b8e1ff;
+        }
+
+        .scroll {
+            background: rgba(15, 15, 40, 0.85);
+            padding: 30px;
+            border: 2px solid #00f5ff;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 20px;
+            width: 85%;
+            max-width: 650px;
+            box-shadow: 0 0 25px #00f5ff;
+        }
+
+        .glow-text {
+            text-shadow: 0 0 20px #00f5ff, 0 0 35px #008aff;
+            font-size: 1.7em;
+            color: #ccf2ff;
+        }
+
+        .button {
+            background: linear-gradient(to right, #008aff, #00f5ff);
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 0 15px #00eaff;
+            margin-top: 15px;
+        }
+
+        .button:hover {
+            background: linear-gradient(to right, #00f5ff, #008aff);
+            box-shadow: 0 0 25px #00eaff;
+        }
+
+        #hidden-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.3em;
+            color: #00f5ff;
+            font-weight: bold;
+            text-shadow: 0 0 10px #00f5ff;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="glow-text">🚀 The Galactic Birthday Quest – Universal Directive 🚀</h1>
+    <div class="scroll">
+        <p><em>By Royal Order of Commander Dooda, Supreme Ruler of the Doodstar Galaxy</em></p>
+        <p><strong>To the brave Sir Khalid,</strong></p>
+        <p>As the stardate aligns with your 21st revolution around the sun, destiny awakens.  
+        A cosmic journey of valor, intellect, and unwavering loyalty awaits you across galaxies unknown.</p>
+        <p>Complete this mission and earn interstellar honors:</p>
+        <ul>
+            <li>👔 <strong>Command Uniform</strong> – woven with stardust</li>
+            <li>🪐 <strong>Celestial Relic</strong> – encoded with legacy</li>
+            <li>🍸 <strong>Elixir of the Stars</strong> – smooth and legendary</li>
+            <li>🍽️ <strong>Feast of the Nebula</strong> – divine and endless</li>
+        </ul>
+        <p>But these are not simply given—they must be claimed. You must survive the <strong>Trial of Logic</strong>,  
+        the <strong>Trial of Endurance</strong>, the <strong>Trial of Trust</strong>, and the <strong>Trial of Time</strong>.</p>
+        <p><strong>When shall these trials arise? When will you be summoned?</strong>  
+        That knowledge lies encrypted… for now.</p>
+        <p>Prepare your systems. The countdown to your first mission is imminent.</p>
+        <button class="button" onclick="showMessage()">🛰️ Initiate Quest Protocol 🛰️</button>
+        <p id="hidden-message">"Transmission received, Sir Khalid. Stand by for further coordinates…"</p>
+    </div>
+    <script>
+        function showMessage() {
+            document.getElementById('hidden-message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
